@@ -1,25 +1,26 @@
 remoteRun.py
+------------
 
 Run many tasks in remote servers.
 You only type `remoteRun.py run`,
 and this script copy your program data and run that in any of task runner servers.
 
-Help:
+## Help:
 
 	$ remoteRun.py -h
 
 
-Role:
+## Role:
 
-      User
-       |
-       |
-  Front Server   <--(ssh)-- Master Server --(ssh)--> Task runner Servers
-    (Global)                   (Local)                   (Local)
-User request receiver       Server Maneger              Calculator
+          User
+           |
+           |
+      Front Server   <--(ssh)-- Master Server --(ssh)--> Task runner Servers
+        (Global)                   (Local)                   (Local)
+    User request receiver       Server Maneger              Calculator
 
 
-Usage:
+## Usage:
 
 **Step1**, write `config.py`, and copy to Front server and Master server.
 
@@ -45,5 +46,5 @@ Results is saved in `/tmp/remoteRun/` in Front server.
 
 **Step6**, after running, pull result data.
 
-	$ remoteRun.py pull [name] [dst dir]
+	$ remoteRun.py pull [name]
 
