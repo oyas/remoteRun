@@ -22,7 +22,7 @@ and this script copy your program data and run that in any of task runner server
 
 ## Usage:
 
-**Step1**, write `config.py`, and copy to Front server and Master server.
+**Step1**, rename `config.py.default` to `config.py`, write `config.py`, and copy it to Front server and Master server.
 
 **Step2**, start `server.py` in Front server.
 
