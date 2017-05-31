@@ -32,17 +32,21 @@ and this script copy your program data and run that in any of task runner server
 
 	$ run_server.py
 
-**Step4**, user run `remoteRun.py`, in Front server.
+**Step4**,
+user, move to the directory that has user program and data for working, and run `remoteRun.py run`, in Front server.
 
-	$ remoteRun.py
+	$ remoteRun.py run
+
+Then, this directory is copied to a Task runner server, and user program is run.
 
 User program name is `run.sh` in default.
 
-**Step5**, check status of tasks.
+**Step5**, check status of tasks, in Front server.
 
 	$ remoteRun.py status
 
-Results is saved in `/tmp/remoteRun/` in Front server.
+When a task is finished,
+the results is saved in `/tmp/remoteRun/` in Front server.
 
 **Step6**, after running, pull result data.
 
